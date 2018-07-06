@@ -215,7 +215,7 @@ resource "aws_security_group_rule" "eximchain_node_rpc" {
   to_port   = 22000
   protocol  = "tcp"
 
-  cidr_blocks = ["127.0.0.1/32"]
+  cidr_blocks = ["0.0.0.0/0"]
 }
 
 resource "aws_security_group_rule" "eximchain_node_egress" {
