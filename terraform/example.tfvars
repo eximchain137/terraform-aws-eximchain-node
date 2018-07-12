@@ -1,4 +1,4 @@
-network_id                   = 513
+network_id                   = 1235813
 public_key_path              = "~/.ssh/quorum.pub"
 aws_region                   = "us-east-1"
 availability_zone            = "us-east-1a"
