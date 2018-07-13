@@ -30,7 +30,7 @@ function generate_eximchain_supervisor_config {
 
     local VERBOSITY=2
     local PW_FILE="/tmp/geth-pw"
-    local GLOBAL_ARGS="--networkid $NETID --rpc --rpcaddr $HOSTNAME --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum --rpcport 22000 --rpccorsdomain \"*\" --port 21000 --verbosity $VERBOSITY --jitvm=false --privateconfigpath $CONSTELLATION_CONFIG"
+    local GLOBAL_ARGS="--networkid $NETID --rpc --rpcaddr \"0.0.0.0\" --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum --rpcport 22000 --rpccorsdomain \"*\" --port 21000 --verbosity $VERBOSITY --jitvm=false --privateconfigpath $CONSTELLATION_CONFIG"
 
     # Assemble list of bootnodes
     local BOOTNODES=""
